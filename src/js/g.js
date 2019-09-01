@@ -27,7 +27,7 @@ $(function() {
             .html("...processing");
 
         // x, y, width, height
-        const picData = [255, 255, 300, 300];
+        const picData = [700, 400, 1000, 1000];
         // name, y
         const nameData = [username, 500];
 
@@ -100,18 +100,18 @@ $(function() {
             ctx = canvas.getContext("2d"),
             imageCount = 2,
             view = {
-                x: 640,
-                y: 155,
-                width: 255,
-                height: 255
+                x: 680,
+                y: 190,
+                width: 170,
+                height: 170
             },
             innerText = {
-                x: 115,
-                y: 448
+                x: 800,
+                y: 800,
             };
 
         var userImg = loadImage(imageUrl);
-        var frameImg = loadImage("src/img/frame.jpeg");
+        var frameImg = loadImage("src/img/frame2.png");
 
         function loadImage(src) {
             var img = new Image();
@@ -128,7 +128,14 @@ $(function() {
 
             ctx.drawImage(frameImg, 0, 0);
 
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(765, 285, 120, 0, 7);
+            ctx.clip();
+            ctx.stroke();
+            ctx.closePath();
             ctx.drawImage(userImg, view.x, view.y, view.width, view.height);
+            ctx.restore();
 
             //ctx.textBaseline = "bottom";e
             //ctx.font = "bold 30px Arial";eeeee
@@ -137,9 +144,9 @@ $(function() {
 
             ctx.textBaseline = "top";
             ctx.textAlign = "center";
-            ctx.font = "bold 30px Montserrat";
-            ctx.fillStyle = "#3D2448";
-            ctx.fillText(name[0], 715, 445);
+            ctx.font = "bold 50px Raleway";
+            ctx.fillStyle = "#000";
+            ctx.fillText(name[0], 750, 430);
 
             cb(canvas.toDataURL("image/jpeg", 1.0));
         }
