@@ -139,7 +139,7 @@ $(function() {
             ctx.textAlign = "center";
             ctx.font = "bold 30px Montserrat";
             ctx.fillStyle = "#3D2448";
-            ctx.fillText(name[0], 702, 447);
+            ctx.fillText(name[0], 725, 447);
 
             cb(canvas.toDataURL("image/jpeg", 1.0));
         }
