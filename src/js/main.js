@@ -41,7 +41,7 @@ $(function() {
           <div>
           <img id="dp_result" src=${url} title="Your DP"/>
           <br>
-          <a class="download-dp" href="${url}" download="TAX_DP_${username}">Download Image</a>
+          <a class="download-dp" href="${url}" download="LL_DP_${username}">Download Image</a>
         <section>
       `;
             }
