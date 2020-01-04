@@ -137,7 +137,7 @@ $(function() {
 
             ctx.textBaseline = "top";
             ctx.textAlign = "left";
-            ctx.font = "bold 60px Poppins";
+            ctx.font = "60px Poppins";
             ctx.fillStyle = "#000000";
             ctx.fillText(name[0], 72, 840);
             
