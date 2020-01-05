@@ -137,9 +137,9 @@ $(function() {
 
             ctx.textBaseline = "top";
             ctx.textAlign = "left";
-            ctx.font = "60px Poppins";
+            ctx.font = "normal 60px Poppins";
             ctx.fillStyle = "#000000";
-            ctx.fillText(name[0], 72, 840);
+            ctx.fillText(name[0], 70, 850);
             
             cb(canvas.toDataURL("image/jpeg", 1.0));
         }
