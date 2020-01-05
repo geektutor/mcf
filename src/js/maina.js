@@ -139,7 +139,7 @@ $(function() {
             ctx.textAlign = "left";
             ctx.font = "normal 60px Poppins";
             ctx.fillStyle = "#000000";
-            ctx.fillText(name[0], 60, 850);
+            ctx.fillText(name[0], 70, 850);
             
             cb(canvas.toDataURL("image/jpeg", 1.0));
         }
