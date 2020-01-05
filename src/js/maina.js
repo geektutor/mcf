@@ -27,9 +27,9 @@ $(function() {
             .html("...processing");
 
         // x, y, width, height
-        const picData = [255, 255, 300, 300];
+        const picData = [72, 62, 668, 588];
         // name, y
-        const nameData = [username, 500];
+        const nameData = [username, 420];
 
         createDP(username, imageData, picData, nameData, function(url) {
             navigateTo("yourdp", createHTMLForImage(url));
@@ -100,14 +100,14 @@ $(function() {
             ctx = canvas.getContext("2d"),
             imageCount = 2,
             view = {
-                x: 640,
-                y: 155,
-                width: 255,
-                height: 255
+                x: 72,
+                y: 62,
+                width: 668,
+                height: 588
             },
             innerText = {
-                x: 115,
-                y: 448
+                x: 72,
+                y: 840
             };
 
         var userImg = loadImage(imageUrl);
@@ -136,11 +136,11 @@ $(function() {
             //ctx.fillText("#TalkNow", 750, view.y + innerText.y);
 
             ctx.textBaseline = "top";
-            ctx.textAlign = "center";
-            ctx.font = "bold 30px Montserrat";
-            ctx.fillStyle = "#3D2448";
-            ctx.fillText(name[0], 765, 445);
-
+            ctx.textAlign = "left";
+            ctx.font = "normal 60px Poppins";
+            ctx.fillStyle = "#000000";
+            ctx.fillText(name[0], 60, 850);
+            
             cb(canvas.toDataURL("image/jpeg", 1.0));
         }
     }
