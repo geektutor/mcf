@@ -1,8 +1,8 @@
-# (PAADC)
+# (MCF)
 
-This is a volunteer project to create social media awareness for the student run event. Attendees input their name and upload an image to generate a customize PAADC event dp.
+This is a volunteer project to create social media awareness for the student run event. Attendees input their name and upload an image to generate a customize MCF event dp.
 
-You can find an online demo at [PAADC](https://geektutor.github.io/PAADC).
+You can find an online demo at [PAADC](https://geektutor.github.io/mcf).
 
 ![eventDp homepage](https://github.com/geektutor/dp/blob/master/screenshot.png)
 
@@ -39,7 +39,7 @@ You can find an online demo at [PAADC](https://geektutor.github.io/PAADC).
 
 - Open your command prompt and clone the repository by running
 
-`git clone https://github.com/geektutor/PAADC.git`
+`git clone https://github.com/geektutor/mcf.git`
 
 - Copy the folder to your **WAMP** www root or **XAMPP** htdots or run php -S 127.0.0.1:1000 from your folder in your terminal
 - Then run in any browser of your choosing
